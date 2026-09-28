@@ -31,7 +31,10 @@ public class Circulo extends FormaGeometrica{
      * @param raio Raio do círculo. Valores menores que 1 são convertidos em 1.
      */
     public Circulo(double raio){
-        //TODO
+        super("CIRCULO");
+        if(raio<1)
+            raio=1d;
+        this.raio=raio;
     }
 
    
@@ -41,7 +44,7 @@ public class Circulo extends FormaGeometrica{
      */
     @Override
     public double area(){
-        //TODO
+        return (raio*raio)*3.14;
     }
 
     /**
@@ -50,7 +53,7 @@ public class Circulo extends FormaGeometrica{
      */
     @Override
     public double perimetro(){
-        //TODO
+        return 2*(3.14*raio);
     }
 
     /**

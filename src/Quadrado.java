@@ -39,7 +39,7 @@ public class Quadrado extends PoligonoReto{
      */
     @Override
     public double area(){
-        //TODO
+        return Math.pow(altura, base);
     }
 
     /**
@@ -48,7 +48,7 @@ public class Quadrado extends PoligonoReto{
      */
     @Override
     public double perimetro(){
-        //TODO
+        return 2*(base+altura);
     }
 
     /**
